@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Công Trường Store</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="checkLoginAndRedirect('home.html')">Trang Chủ</a></li>
+                <li><a href="#" onclick="checkLoginAndRedirect('services.html')">Sản Phẩm</a></li>
+                <li><a href="#" onclick="checkLoginAndRedirect('doctors.html')">Giới Thiệu</a></li>
+                <li><a href="#" onclick="checkLoginAndRedirect('products.html')">Liên Hệ</a></li>
+                <li><a href="log.html">Đăng Nhập</li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="img/1.png" alt="Hero Image">
+        </section>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="intro-text">
+                <h2>Beautify Your Space</h2>
+                <button>Learn More</button>
+                <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <img src="img/2.png" alt="Woman Portrait">
+        </section>
+
+        <!-- Product Section -->
+        <section class="products-section">
+            <h2>Browse The Range</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="img/3.png" alt="Dining">
+                    </div>
+                    <h3>Dining</h3>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="img/4.png" alt="Living">
+                    </div>
+                    <h3>Living</h3>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="img/5.png" alt="Bedroom">
+                    </div>
+                    <h3>Bedroom</h3>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Subscribe Section -->
+        <section class="subscribe">
+            <h3>Join Our Mailing List</h3>
+            <p>Sign up to receive inspiration, product updates and special offers.</p>
+            <form action="log.html" method="get">
+                <input type="email" placeholder="Enter your email" />
+                <input type="submit" value="Submit" />
+            </form>
+
+
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            © 2025 Furniture. All rights reserved.
+        </footer>
+
+    </div>
+    <script>
+        // Giả lập kiểm tra người dùng đã đăng nhập hay chưa
+        function checkLoginAndRedirect(targetPage) {
+            const isLoggedIn = sessionStorage.getItem('loggedIn');
+
+            if (!isLoggedIn) {
+                alert("Bạn cần đăng nhập để truy cập.");
+                window.location.href = "log.html"; // Chuyển đến trang đăng nhập
+            } else {
+                window.location.href = targetPage; // Cho phép truy cập nếu đã đăng nhập
+            }
+        }
+    </script>
+
+</body>
+
+</html>
