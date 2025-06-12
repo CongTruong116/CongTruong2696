@@ -1,0 +1,174 @@
+/* Nhúng Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #05445E;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #189AB4;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.intro-text h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #05445E;
+}
+
+.intro-text p {
+  margin: 1rem 0;
+}
+
+.intro-text button {
+  background-color: #05445E;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.intro img {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.products-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.product-item {
+  width: 200px;
+  text-align: center;
+}
+
+.product-image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-image img {
+  width: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+}
+
+.product-image:hover img {
+  transform: scale(1.1) rotate(30deg);
+}
+
+
+.subscribe {
+  background-color: #f2f6fc;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 8px;
+}
+
+.subscribe h3 {
+  font-size: 1.5rem;
+  color: #05445E;
+}
+
+.subscribe input[type="email"] {
+  padding: 0.6rem;
+  width: 250px;
+  margin: 1rem 0.5rem 0 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe input[type="submit"] {
+  padding: 0.6rem 1rem;
+  background-color: #05445E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #05445E;
+  color: white;
+  margin-top: 2rem;
+}

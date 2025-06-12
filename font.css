@@ -1,0 +1,63 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+/* Logo sử dụng font nổi bật hơn */
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #05445E;
+  font-weight: 600;
+}
+
+/* Menu */
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400px;
+}
+/* Nhúng font từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+/* Áp dụng font cho toàn bộ nội dung */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Áp dụng font nổi bật cho tiêu đề và logo */
+h1, h2, h3, .logo, nav a {
+  font-family: 'Poppins', sans-serif;
+}
+.products-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.product-item {
+  width: 200px;
+  text-align: center;
+}
+
+.product-image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-image img {
+  width: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+}
+
+.product-image:hover img {
+  transform: scale(1.1) rotate(30deg);
+}
+

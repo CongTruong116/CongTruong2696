@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sản Phẩm - Furniture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #003049;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #0077b6;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd60a;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #003049;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 40px 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, rotate 0.3s ease;
+        }
+
+        .product-card img,
+        .product-card video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img,
+        .product-card:hover video {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #003049;
+        }
+
+        .product-info p {
+            color: #555;
+        }
+
+        footer {
+            background-color: #003049;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Danh Mục Sản Phẩm</h2>
+    </header>
+
+    <nav>
+        <a href="home.html">Trang Chủ</a>
+        <a href="sanpham.html">Sản Phẩm</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="lienhe.html">Liên Hệ</a>
+        <a href="thithu.html">Đăng Xuất</a>
+    </nav>
+
+    <h1>Thập Cẩm Tự Chọn</h1>
+
+    <section class="product-grid">
+        <a href="https://shopee.vn/%C3%81o-l%C3%B3t-%C3%A1o-ng%E1%BB%B1c-N%E1%BB%AF-ch%E1%BB%91ng-t%E1%BB%A5t-C%C3%A0i-Tr%C6%B0%E1%BB%9Bc-%C4%91%E1%BB%87m-d%C3%A0y-5cm-si%C3%AAu-n%C3%A2ng-t%E1%BA%A1o-khe-m%E1%BA%B7c-v%C3%A1y-%C4%91%E1%BA%A7m-c%C3%BAp-h%E1%BB%9F-vai-An946-i.206259037.29201665616"
+            class="product-card">
+            <img src="img/sp1.webp" alt="Áo Lót Nữ">
+            <div class="product-info">
+                <h3>Áo Lót Nữ</h3>
+                <p>99.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Loa-bluetooth-kh%C3%B4ng-d%C3%A2y-mini-A005-%C4%91%C3%A8n-led-theo-nh%E1%BA%A1c-%C3%A2m-bass-m%E1%BA%A1nh-h%E1%BB%97-tr%E1%BB%A3-l%E1%BA%AFp-th%E1%BA%BB-nh%E1%BB%9B-h%C3%A0ng-cao-c%E1%BA%A5p-i.729832356.19051815326"
+            class="product-card">
+            <img src="img/sp2.webp" alt="Loa Bluetooth">
+            <div class="product-info">
+                <h3>Loa Bluetooth</h3>
+                <p>55.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/B%C3%A0n-Gaming-Ch%E1%BB%AF-K-ch%C3%A2n-cong-b%C3%A0n-l%C3%A0m-vi%E1%BB%87c-h%E1%BB%8Dc-sinh-v%C4%83n-ph%C3%B2ng-Ch%C3%A2n-s%E1%BA%AFt-s%C6%A1n-t%C4%A9nh-%C4%91i%E1%BB%87n-cao-c%E1%BA%A5p-20x40mm-m%E1%BA%B7t-b%C3%A0n-bo-g%C3%B3c-i.8688054.7540220334?sp_atk=588336ce-7e45-46ba-b69e-c234e1daae11&xptdk=588336ce-7e45-46ba-b69e-c234e1daae11"
+            class="product-card">
+            <img src="img/sp3.webp" alt="Bàn Gaming chữ K">
+            <div class="product-info">
+                <h3>Bàn Gaming chữ K</h3>
+                <p>379.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/C%C3%A1p-M%E1%BA%A1ng-LAN-%C4%90%C3%BAc-S%E1%BA%B5n-Cat6-UTP-1000Mbps-Cao-C%E1%BA%A5p-NYT-LC6101-BH-12T-Ch%C3%ADnh-H%C3%A3ng-i.92764096.2895269077?sp_atk=057856bb-7e0f-4922-9953-294888dc4dca&xptdk=057856bb-7e0f-4922-9953-294888dc4dca"
+            class="product-card">
+            <img src="img/sp4.webp" alt="Cap Mạng Lan">
+            <div class="product-info">
+                <h3>Cap Mạng Lan </h3>
+                <p>29.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/M%C3%A0n-H%C3%ACnh-Cong-34-Inch-WQHD-AFD-344G-%E2%80%93-165Hz-HVA-HDR-FreeSync-B%E1%BA%A3o-H%C3%A0nh-2-N%C4%83m-i.231097472.24634350210?sp_atk=592f70a9-9b17-42fc-b8e8-c4bca4a660a7&xptdk=592f70a9-9b17-42fc-b8e8-c4bca4a660a7"
+            class="product-card">
+            <img src="img/sp5.webp" alt="Màn Hình Cong 34Inch">
+            <div class="product-info">
+                <h3>Màn Hình Cong 34Inch</h3>
+                <p>6.090.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/C%C3%A2y-m%C3%A1y-t%C3%ADnh-c%E1%BA%A5u-h%C3%ACnh-cao-I7-ram-16g-vga-750ti-ch%C6%A1i-m%C6%B0%E1%BB%A3t-m%E1%BB%8Di-game-i.43135227.13235393646?sp_atk=b336d3d6-1871-4ea1-a208-1ae80c5c5e71&xptdk=b336d3d6-1871-4ea1-a208-1ae80c5c5e71"
+            class="product-card">
+            <video src="img/sp6.mp4" autoplay muted loop controls></video>
+            <div class="product-info">
+                <h3>Cây Máy Tính Cấu Hình Cao</h3>
+                <p>4.691.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Qu%E1%BA%A7n-s%E1%BB%8Bp-nam-boxer-Kimochishop-qu%E1%BA%A7n-l%C3%B3t-nam-%C4%91%E1%BA%B9p-tho%C3%A1ng-m%C3%A1t-DAS3S-i.480315408.14016532527?sp_atk=48dcac54-3506-4d8c-be3d-142156ba4ec0&xptdk=48dcac54-3506-4d8c-be3d-142156ba4ec0"
+            class="product-card">
+            <video src="img/sp7.mp4" autoplay muted loop controls></video>
+            <div class="product-info">
+                <h3>Quần Lót Nam</h3>
+                <p>26.000-129.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Qu%E1%BA%A7n-short-l%E1%BB%ADng-ho%E1%BA%A1t-h%C3%ACnh-b%C3%A1o-h%E1%BB%93ng-v%E1%BB%8Bt-v%C3%A0ng-Qu%E1%BA%A7n-%C4%91%C3%B9i-thun-cartoon-m%E1%BA%B7c-nh%C3%A0-th%E1%BB%83-thao-unisex-%C4%91%E1%BB%93-%C4%91i-bi%E1%BB%83n-i.214766856.8296439993?sp_atk=0c9d4ad4-6c1f-4ff0-b294-94baa3bc8a9e&xptdk=0c9d4ad4-6c1f-4ff0-b294-94baa3bc8a9e"
+            class="product-card">
+            <img src="img/sp8.webp" alt="Quần short lửng Hoạt Hình">
+            <div class="product-info">
+                <h3>Quần short lửng Hoạt Hình</h3>
+                <p>29.388-49.900 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Qu%E1%BA%A7n-con-voi-ho%E1%BA%A1t-h%C3%ACnh-qu%E1%BA%A7n-ng%E1%BB%A7-nam-qu%E1%BA%A7n-%C4%91%C3%B9i-nam-m%E1%BA%B7c-nh%C3%A0-Qu%E1%BA%A7n-short-c%E1%BA%B7p-%C4%91%C3%B4i-vui-nh%E1%BB%99n-i.965935474.26127226723?sp_atk=2ec71a86-90a8-4a2b-b7f0-2e2f08d8d8f3&xptdk=2ec71a86-90a8-4a2b-b7f0-2e2f08d8d8f3"
+            class="product-card">
+            <img src="img/sp10.webp" alt="Quần Con Voi">
+            <div class="product-info">
+                <h3>Quần Con Voi</h3>
+                <p>84.320</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Dung-D%E1%BB%8Bch-V%E1%BB%87-Sinh-Ph%E1%BB%A5-N%E1%BB%AF-Lagumi-Tr%E1%BA%A7u-Kh%C3%B4ng-Tr%C3%A0m-Tr%C3%A0-Gi%E1%BA%A3m-Ng%E1%BB%A9a-Kh%C3%AD-H%C6%B0-An-To%C3%A0n-Cho-C%E1%BA%A3-M%E1%BA%B9-B%E1%BA%A7u-chai-100ml-i.477988486.9586993883?sp_atk=89e79686-8ae9-48f4-8ccf-667d64e166db&xptdk=89e79686-8ae9-48f4-8ccf-667d64e166db"
+            class="product-card">
+            <img src="img/sp11.webp" alt="Dung Dịch Vệ Sinh Phụ Nữ">
+            <div class="product-info">
+                <h3>Dung Dịch Vệ Sinh Phụ Nữ </h3>
+                <p>229.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Dung-d%E1%BB%8Bch-v%E1%BB%87-sinh-nam-gi%E1%BB%9Bi-h%C6%B0%C6%A1ng-b%E1%BA%A1c-h%C3%A0-RHYS-MAN-Rhys-Ultimate-120ml-i.758111427.14082885825?sp_atk=013574df-ac52-4166-8f40-5e4836ccc706&xptdk=013574df-ac52-4166-8f40-5e4836ccc706"
+            class="product-card">
+            <img src="img/sp9.webp" alt="Dung dịch vệ sinh nam">
+            <div class="product-info">
+                <h3>Dung dịch vệ sinh nam</h3>
+                <p>99.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Gh%E1%BA%BF-v%C4%83n-ph%C3%B2ng-l%C6%B0ng-t%E1%BB%B1a-gh%E1%BA%BF-xoay-v%C4%83n-ph%C3%B2ng-c%C3%B3-th%E1%BB%83-ng%E1%BB%93i-ng%E1%BA%A3-l%C6%B0ng-gh%E1%BA%BF-h%E1%BB%8Dc-t%E1%BA%ADp-gh%E1%BA%BF-s%E1%BA%BFp-i.618173760.21703790920?sp_atk=7ca4f271-538f-4ce2-811e-dbcf9ec83033&xptdk=7ca4f271-538f-4ce2-811e-dbcf9ec83033"
+            class="product-card">
+            <img src="img/sp13.webp" alt="Ghế văn phòng">
+            <div class="product-info">
+                <h3>Ghế văn phòng</h3>
+                <p>669.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/%C4%90%E1%BB%93-Ch%C6%A1i-L%E1%BA%AFp-R%C3%A1p-Si%C3%AAu-Xe-lamboni-Bugatti-c%C3%A1c-m%C3%A0u-1280-M%E1%BA%A3nh-M%C3%B4-H%C3%ACnh-%C3%94-T%C3%B4-Cao-C%E1%BA%A5p-H%E1%BB%99p-Qu%C3%A0-Sang-Tr%E1%BB%8Dng-i.1212474494.25873601263?sp_atk=ca4b1bcd-2d19-4b0a-9878-a5195803eef5&xptdk=ca4b1bcd-2d19-4b0a-9878-a5195803eef5"
+            class="product-card">
+            <video src="img/sp15.mp4" autoplay muted loop controls></video>
+            <div class="product-info">
+                <h3>Đồ Chơi Lắp Ráp Siêu Xe</h3>
+                <p>80.000 - 619.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Qu%E1%BA%A1t-C%E1%BA%A7m-Tay-Mini-V%E1%BB%9Bi-120-M%E1%BB%A9c-Gi%C3%B3-S%E1%BA%A1c-Nhanh-M%C3%A0n-H%C3%ACnh-LCD-Hi%E1%BB%83n-Th%E1%BB%8B-T%E1%BB%91c-%C4%90%E1%BB%99-Gi%C3%B3-L%C3%A0m-M%C3%A1t-L%C3%AAn-%C4%90%E1%BA%BFn-6H-i.541686135.25750820942?sp_atk=24e7e6ec-4780-4d2f-bd94-9d59b9962bf9&xptdk=24e7e6ec-4780-4d2f-bd94-9d59b9962bf9"
+            class="product-card">
+            <video src="img/sp14.mp4" autoplay muted loop controls></video>
+            <div class="product-info">
+                <h3>Quạt Cầm Tay Mini</h3>
+                <p>83.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Gi%C3%A1-%C4%91%E1%BB%A1-Laptop-ch%C3%A2n-xoay-360-%C4%91%E1%BB%99-%C4%90%E1%BA%BF-t%E1%BA%A3n-nhi%E1%BB%87t-k%C3%AA-laptop-M%C3%A1y-t%C3%ADnh-b%E1%BA%A3ng-Ipad-h%E1%BB%A3p-kim-Th%C3%A9p-c%C3%B4ng-th%C3%A1i-h%E1%BB%8Dc-K94-K95-Macbox-i.338344025.23376825939?sp_atk=4759d955-7293-43e4-89db-194a342a1c18&xptdk=4759d955-7293-43e4-89db-194a342a1c18"
+            class="product-card">
+            <video src="img/sp16.mp4"autoplay muted loop controls></video>
+            <div class="product-info">
+                <h3>Giá đỡ Laptop chân xoay</h3>
+                <p>163.560.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/Chu%E1%BB%99t-ko-d%C3%A2y-Bluetooth-2.4Ghz-t%E1%BB%B1-s%E1%BA%A1c-pin-cao-c%E1%BA%A5p-2-trong-1-ch%E1%BB%91ng-%E1%BB%93n-d%C3%B9ng-cho-%C4%90T-M%C3%A1y-T%C3%ADnh-Laptop-laptop-t%C3%A1o-i.52528876.13856069722?sp_atk=57d56add-a870-4192-9679-d232492f42ed&xptdk=57d56add-a870-4192-9679-d232492f42ed"
+            class="product-card">
+            <img src="img/sp17.webp" alt="Chuột ko dây Bluetooth 2.4Ghz">
+            <div class="product-info">
+                <h3>Chuột ko dây Bluetooth 2.4Ghz</h3>
+                <p>99.000 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/B%E1%BB%99-ph%C3%A1t-wifi-TENDA-F3-h%C3%ACnh-th%E1%BB%A9c-%C4%91%E1%BA%B9p-xuy%C3%AAn-t%C6%B0%E1%BB%9Dng-t%E1%BB%91c-%C4%91%E1%BB%99-300Mbps-i.47158327.7072042619?sp_atk=710024d4-d2b9-46d3-bec9-5514d9385a94&xptdk=710024d4-d2b9-46d3-bec9-5514d9385a94"
+            class="product-card">
+            <img src="img/sp18.webp" alt="Bộ phát wifi TENDA F3">
+            <div class="product-info">
+                <h3>Bộ phát wifi TENDA F3</h3>
+                <p>24.500 - 118.800 VNĐ</p>
+            </div>
+        </a>
+        <a href="https://shopee.vn/%C4%90%E1%BB%93ng-h%E1%BB%93-%C4%91eo-tay-nam-Wokai-d%C3%A2y-da-n%C3%A2u-m%E1%BA%B7t-n%C3%A2u-l%E1%BB%8Bch-l%C3%A3m-sang-tr%E1%BB%8Dng-i.1201474191.27928968404"
+            class="product-card">
+            <img src="img/sp19.webp" alt="Đồng hồ đeo tay nam Wokai">
+            <div class="product-info">
+                <h3>Đồng hồ đeo tay nam Wokai </h3>
+                <p>2.000.800 VNĐ</p>
+            </div>
+        </a>
+
+
+        <!-- Có thể thêm nhiều sản phẩm -->
+    </section>
+
+    <footer>
+        © 2025 Furniture. All rights reserved.
+    </footer>
+
+    <script>
+        // Nếu chưa đăng nhập, chuyển về trang login
+        if (localStorage.getItem("loggedIn") !== "true") {
+            alert("Bạn cần đăng nhập để xem trang sản phẩm.");
+            window.location.href = "log.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giới Thiệu - Furniture</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #003049;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0077b6;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #ffd60a;
+    }
+
+    .content {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #003049;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #003049;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Giới Thiệu</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Trang Chủ</a>
+    <a href="sanpham.html">Sản Phẩm</a>
+    <a href="gioithieu.html">Giới Thiệu</a>
+    <a href="lienhe.html">Liên Hệ</a>
+    <a href="thithu.html">Đăng Xuất</a>
+  </nav>
+
+  <div class="content">
+    <h2>Như Công Trường Đã Giới Thiệu Các Anh Em 302 Đã Biết Và Tự Cảm Nhận Thì Vãi Lon Đầu Cắt Moi Mẹ Luôn </h2>
+    <p>
+      Với Cái Trình Độ Rảnh Buoi Của Công Trường Thì Nó Đẳng Cấp Con Mẹ Nó Luôn Ấy Chứ 
+    </p>
+    <p>
+       Thôi được rồi gửi nanh em buổi chiều của tôi nhé.
+    </p>
+  </div>
+
+  <footer>
+    © 2025 Furniture. All rights reserved.
+  </footer>
+
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      alert("Vui lòng đăng nhập để xem trang này.");
+      window.location.href = "log.html";
+    }
+  </script>
+</body>
+</html>
